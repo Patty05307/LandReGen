@@ -1,23 +1,32 @@
-# Land ReGen Hackathon Project
+# 🌱 Land ReGen – AI-Powered Soil Degradation Detection
 
-This project is a full-stack solution for SDG 15: Life on Land, focusing on soil health, sustainable agriculture, reforestation, land rehabilitation, and climate resilience.
+## Overview
+Land ReGen is a solo hackathon prototype for SDG 15: Life on Land. It uses NASA MODIS remote sensing (NDVI) and a simple AI endpoint to assess soil degradation risk and provide recommendations.
+
+## 🚀 Live Deployment Status
+
+- **Frontend Dashboard (Vercel):** [https://land-re-gen-git-main-patiences-projects-20fd07c5.vercel.app/](https://land-re-gen-git-main-patiences-projects-20fd07c5.vercel.app/)
+- **Backend API (Render):** [https://landregen.onrender.com/](https://landregen.onrender.com/)
 
 ## Features
 - Backend REST API for soil health, land use, and monitoring
 - GIS/remote sensing API integration
 - AI model for early detection of soil degradation
 - Web dashboard for data visualization and land management
-- Supabase authentication and database
+- Supabase authentication and database (optional)
 - Reforestation/restoration planning and analytics
 
-## Getting Started
-1. Backend: See `backend/` for API and AI model setup
-2. Frontend: See `frontend/` for dashboard
-3. Supabase: Configure authentication and database
+## Tech Stack
+- Frontend: React + Recharts
+- Backend: FastAPI + Uvicorn
+- Python libs: scikit-learn, tensorflow (for future model integration)
 
-## Hackathon Themes
-- Land use & monitoring with AI
-- Early detection of soil degradation
-- Sustainable farming and agro-innovation
-- Reforestation and restoration planning
-- Data-driven land management
+## Getting Started (Development)
+
+To run the project locally:
+
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
