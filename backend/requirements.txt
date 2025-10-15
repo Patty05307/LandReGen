@@ -1,5 +1,5 @@
 fastapi
 uvicorn
 scikit-learn
-tensorflow
+tensorflow-cpu==2.10.0
 requests
